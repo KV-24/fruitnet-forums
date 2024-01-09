@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= username %></title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1><%=forumName%></h1>
+    <h2><%= username %></h2>
+    <table>
+    <tr><th>User ID</th><th>First Name</th><th>Surname</th><th>Country</th><th>Topics</th></tr>
+      <tr>
+        <td><%= user.user_id %></td>
+        <td><%= user.firstname %></td>
+        <td><%= user.surname %></td>
+        <td><%= user.country %></td>
+        <td><%= user.topic_title %></td>
+    </tr>     
+    </table>  
+  </body>
+</html>
